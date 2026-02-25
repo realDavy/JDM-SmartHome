@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JDM | 智能家居与工业控制</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <canvas id="particleCanvas"></canvas>
+
+    <nav class="navbar">
+        <div class="container">
+            <a href="#" class="logo">JDM</a>
+            <ul class="nav-links">
+                <li><a href="#">智能家居</a></li>
+                <li><a href="#">洗衣机控制板</a></li>
+                <li><a href="#">冰箱显示面版</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-content">
+            <h1>重塑感知，智领生活。</h1>
+            <p>JDM 工业级洗衣机控制板与超薄冰箱显示面板，现已发布。</p>
+            <div class="cta-group">
+                <a href="#products" class="btn-primary">了解更多</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="product-grid">
+        <div class="grid-container">
+            <div class="card tall" onclick="openModal(0)">
+                <div class="card-text">
+                    <span>旗舰新品</span>
+                    <h2>JDM Core X1</h2>
+                    <p>工业级洗衣机控制板，毫秒级响应。</p>
+                </div>
+                <div class="product-img-placeholder">IMAGE: CONTROL_BOARD</div>
+            </div>
+            <div class="card" onclick="openModal(1)">
+                <div class="card-text">
+                    <h2>Vision Panel</h2>
+                    <p>4K 触控冰箱面板。</p>
+                </div>
+                <div class="product-img-placeholder">IMAGE: DISPLAY_PANEL</div>
+            </div>
+            <div class="card" onclick="openModal(2)">
+                <div class="card-text">
+                    <h2>JDM Hub</h2>
+                    <p>全屋智能，一触即发。</p>
+                </div>
+                <div class="product-img-placeholder">IMAGE: HUB</div>
+            </div>
+        </div>
+    </section>
+
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">PRODUCT PREVIEW</div>
+                <div class="modal-info">
+                    <h2 id="modalTitle"></h2>
+                    <p id="modalDescription"></p>
+                    <ul class="specs" id="modalSpecs"></ul>
+                    <button class="btn-primary">获取技术支持</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <p>Copyright © 2026 JDM Inc. 保留所有权利。</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
